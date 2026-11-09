@@ -181,22 +181,6 @@ body.editing .sign { clip-path: none; }
   .strip { gap: 10px; padding-block: 0 48px; }
   .sign { font-size: 1.1rem; }
 }
-
-/* Anmeldeformular (Brevo) */
-.signup { display: grid; gap: 10px; max-width: 520px; }
-.signup label.entry__label { font-weight: 600; font-size: .95rem; }
-.signup .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: stretch; }
-.signup input.input { flex: 1 1 220px; min-width: 0; font: 500 1.05rem/1.2 var(--font-body); color: var(--fg); background: var(--surface);
-  border: 2px solid var(--line); padding: 14px 14px; border-radius: 0; }
-.signup input.input:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
-.signup button.sign { border: 0; cursor: pointer; }
-.signup .input--hidden { position: absolute !important; left: -9999px; width: 1px; height: 1px; opacity: 0; }
-.signup .entry__error { color: #b4442f; font-size: .9rem; }
-.signup .entry__error:empty { display: none; }
-.signup .sib-hide-loader-icon, .signup .progress-indicator__icon { display: none; }
-.sib-form-message-panel { border-left: 6px solid var(--gold); background: var(--surface); padding: 14px 16px; max-width: 520px; font-weight: 600; }
-#error-message.sib-form-message-panel { border-left-color: #b4442f; }
-.sib-form-message-panel svg { display: none; }
 </style>
 <style>[hidden]{display:none!important}</style>
 </head>
@@ -220,7 +204,7 @@ body.editing .sign { clip-path: none; }
       <h1><span>Zämä geitz</span> <em>berguf.</em></h1>
       <p>Online-Coaching aus der Schweiz für alle, die sich wieder bewegen und sich besser fühlen wollen. Draussen statt im Fitnessstudio.</p>
       <div class="cta-row">
-        <a class="sign" href="#starterplan"><span>Gratis Starterplan</span> <small>14 Täg</small></a>
+        <a class="sign" href="https://d674768c.sibforms.com/serve/MUIFAM4Cs9VWsKAKbq1TIrL8Cex-jVUjp5BkQqiTugdD3XkPROiJa44SAb8O6PSbxT8LeXWrLUwqQNpE478ZJRRW2-48-J5bcx1uDTTSB30yo9cOa4gSOMB9bGSWy2k29ZqDgLlcRoDxJlkB7N3LIMZ_IK8MtqlMH506MCzUk07oF08FautAH0eqQODm9Rotko3HVd1-5Z8VSl2FdA==" target="_blank" rel="noopener"><span>Gratis Starterplan</span> <small>14 Täg</small></a>
         <a class="ghost" href="#zaema-berguf">Zum Coaching</a>
       </div>
       </div>
@@ -234,33 +218,10 @@ body.editing .sign { clip-path: none; }
         <span class="eyebrow">Gratis Starterplan</span>
         <h2>In 14 Täg zrügg it Bewegig</h2>
         <p class="lead">Ein einfacher Plan für die ersten zwei Wochen. Du startest mit 20 Minuten und steigerst dich Schritt für Schritt. Ohne Fitnessstudio, ohne Geräte.</p>
-        <div id="sib-form-container" class="sib-form-container">
-          <div id="error-message" class="sib-form-message-panel" style="display:none" role="alert">
-            <div class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Das hat nicht geklappt. Prüf deine E-Mail-Adresse und versuch es nochmals.</span></div>
-          </div>
-          <div id="success-message" class="sib-form-message-panel" style="display:none" role="status">
-            <div class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Merci! Dr Plan isch unterwägs u landet i 1–2 Minute i dim Postfach. Lueg für alli Fäu ou im Spam-Ordner. Zämä geitz berguf!</span></div>
-          </div>
-          <div id="sib-container">
-            <form id="sib-form" class="signup" method="POST" action="https://d674768c.sibforms.com/serve/MUIFAM4Cs9VWsKAKbq1TIrL8Cex-jVUjp5BkQqiTugdD3XkPROiJa44SAb8O6PSbxT8LeXWrLUwqQNpE478ZJRRW2-48-J5bcx1uDTTSB30yo9cOa4gSOMB9bGSWy2k29ZqDgLlcRoDxJlkB7N3LIMZ_IK8MtqlMH506MCzUk07oF08FautAH0eqQODm9Rotko3HVd1-5Z8VSl2FdA==" data-type="subscription" novalidate>
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row">
-                    <label class="entry__label" for="EMAIL" data-required="*">Dini E-Mail-Adrässe</label>
-                    <div class="entry__field row">
-                      <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" inputmode="email" placeholder="name@beispiel.ch" data-required="true" required>
-                      <button class="sign sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit"><span>Plan holen</span> <small>gratis</small></button>
-                    </div>
-                  </div>
-                  <label class="entry__error entry__error--primary"></label>
-                </div>
-              </div>
-              <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-              <input type="hidden" name="locale" value="de">
-            </form>
-          </div>
+        <div class="cta-row">
+          <a class="sign" href="https://d674768c.sibforms.com/serve/MUIFAM4Cs9VWsKAKbq1TIrL8Cex-jVUjp5BkQqiTugdD3XkPROiJa44SAb8O6PSbxT8LeXWrLUwqQNpE478ZJRRW2-48-J5bcx1uDTTSB30yo9cOa4gSOMB9bGSWy2k29ZqDgLlcRoDxJlkB7N3LIMZ_IK8MtqlMH506MCzUk07oF08FautAH0eqQODm9Rotko3HVd1-5Z8VSl2FdA==" target="_blank" rel="noopener"><span>Plan per Mail holen</span> <small>gratis</small></a>
         </div>
-        <p class="note">Du bekommst den Plan in 1–2 Minuten per Mail. Abmelden geht jederzeit.</p>
+        <p class="note">Du trägst deine E-Mail-Adresse ein und bekommst den Plan in 1–2 Minuten per Mail. Abmelden geht jederzeit.</p>
       </div>
       <div class="ticket" aria-label="Was im Starterplan drin ist">
         <div class="ticket-row"><b>6</b><span><span>Wanderungen</span><em>von 20 Minuten flach bis zur ersten kleinen Tour</em></span></div>
@@ -403,15 +364,5 @@ Benjamin Stucki
     <p class="small">© 2026 Wanderdude · <a href="agb.html">AGB</a></p>
   </div>
 </footer>
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte eine Ländervorwahl aus.';
-  window.LOCALE = 'de';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Diese E-Mail-Adresse stimmt nicht. Prüf sie bitte nochmals.";
-  window.REQUIRED_ERROR_MESSAGE = "Bitte trag deine E-Mail-Adresse ein.";
-  window.GENERIC_INVALID_MESSAGE = "Diese E-Mail-Adresse stimmt nicht. Prüf sie bitte nochmals.";
-  window.translation = { common: { selectedList: '{quantity} Liste ausgewählt', selectedLists: '{quantity} Listen ausgewählt', selectedOption: '{quantity} ausgewählt', selectedOptions: '{quantity} ausgewählt' } };
-  var AUTOHIDE = Boolean(0);
-</script>
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 </html>
